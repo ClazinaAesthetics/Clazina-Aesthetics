@@ -11,9 +11,10 @@
 
 body{
 margin:0;
-font-family: 'Helvetica Neue', sans-serif;
+font-family:'Helvetica Neue', sans-serif;
 background:#fafafa;
 color:#333;
+scroll-behavior:smooth;
 }
 
 header{
@@ -33,6 +34,8 @@ text-align:center;
 background:white;
 padding:15px;
 border-bottom:1px solid #eee;
+position:sticky;
+top:0;
 }
 
 nav a{
@@ -43,8 +46,9 @@ font-weight:500;
 }
 
 .hero{
-height:500px;
-background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url("https://images.unsplash.com/photo-1600948836101-f9ffda59d250");
+height:520px;
+background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+url("https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1600&q=80");
 background-size:cover;
 background-position:center;
 display:flex;
@@ -56,7 +60,7 @@ padding:20px;
 }
 
 .hero h2{
-font-size:50px;
+font-size:48px;
 margin-bottom:10px;
 }
 
@@ -109,11 +113,35 @@ color:#c6a76e;
 background:#f4f4f4;
 }
 
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+margin-top:40px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
 footer{
 background:black;
 color:white;
 text-align:center;
 padding:30px;
+}
+
+@media (max-width:768px){
+
+.hero h2{
+font-size:32px;
+}
+
+.hero{
+height:420px;
+}
+
 }
 
 </style>
@@ -133,6 +161,7 @@ padding:30px;
 
 <a href="#">Home</a>
 <a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 
@@ -146,7 +175,7 @@ padding:30px;
 
 <p>Cosmetic Tattoo Specialist in Annandale, Sydney</p>
 
-<a class="button" href="#">Book Appointment</a>
+<a class="button" href="#contact">Book Appointment</a>
 
 </div>
 
@@ -159,44 +188,43 @@ padding:30px;
 <div class="services">
 
 <div class="card">
-
 <h3>Nano / Microblading Brows</h3>
-
-<p>Natural hair stroke brows designed to enhance your facial symmetry.</p>
-
+<p>Natural hair stroke brows designed to enhance facial symmetry.</p>
 <div class="price">$450</div>
-
 </div>
 
 <div class="card">
-
 <h3>Powder / Ombre Brows</h3>
-
-<p>Soft shaded brows creating a fuller makeup style finish.</p>
-
+<p>Soft shaded brows creating a fuller makeup finish.</p>
 <div class="price">$420</div>
-
 </div>
 
 <div class="card">
-
 <h3>Lip Blush Tattoo</h3>
-
-<p>Enhance lip colour, shape and symmetry with soft pigment.</p>
-
+<p>Enhance lip colour and shape with soft pigment.</p>
 <div class="price">$400</div>
-
 </div>
 
 <div class="card">
-
 <h3>Cosmetic Eyeliner</h3>
-
 <p>Define your eyes with long lasting eyeliner tattoo.</p>
-
 <div class="price">$350</div>
+</div>
 
 </div>
+
+</section>
+
+<section class="section" id="gallery">
+
+<h2>Before & After</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=800&q=80">
 
 </div>
 
@@ -208,7 +236,7 @@ padding:30px;
 
 <p>
 
-Clazina Aesthetics specialises in advanced cosmetic tattooing treatments designed to enhance natural beauty and simplify your daily routine. 
+Clazina Aesthetics specialises in advanced cosmetic tattooing treatments designed to enhance natural beauty and simplify your daily routine.
 
 Located in Annandale Sydney, we focus on creating soft, natural and long lasting results tailored to every client.
 
@@ -224,11 +252,22 @@ Located in Annandale Sydney, we focus on creating soft, natural and long lasting
 
 <a class="button" href="#">Book Now</a>
 
+<br><br>
+
+<iframe
+src="https://maps.google.com/maps?q=Annandale%20Sydney&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="300"
+style="border:0;"
+loading="lazy">
+</iframe>
+
 </section>
 
 <footer>
 
 <p>© 2026 Clazina Aesthetics</p>
+<p>Follow us on Instagram</p>
 
 </footer>
 
