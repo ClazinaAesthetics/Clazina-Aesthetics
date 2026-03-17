@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Clazina Aesthetics</title>
 
 <style>
 
 body{
-font-family: Arial, sans-serif;
 margin:0;
+font-family: 'Helvetica Neue', sans-serif;
 background:#fafafa;
 color:#333;
 }
@@ -17,74 +19,101 @@ color:#333;
 header{
 background:black;
 color:white;
-padding:20px;
+padding:25px;
 text-align:center;
+}
+
+header h1{
+margin:0;
+letter-spacing:2px;
 }
 
 nav{
 text-align:center;
+background:white;
 padding:15px;
-background:#f4f4f4;
+border-bottom:1px solid #eee;
 }
 
 nav a{
 margin:0 15px;
 text-decoration:none;
-color:black;
-font-weight:bold;
+color:#333;
+font-weight:500;
 }
 
 .hero{
-height:400px;
-background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1556228724-4b0f1b7b86f5');
+height:500px;
+background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url("https://images.unsplash.com/photo-1600948836101-f9ffda59d250");
 background-size:cover;
 background-position:center;
 display:flex;
 align-items:center;
 justify-content:center;
-color:white;
 text-align:center;
+color:white;
+padding:20px;
 }
 
-.hero h1{
-font-size:48px;
+.hero h2{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.button{
+background:#c6a76e;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+color:white;
+display:inline-block;
+margin-top:20px;
 }
 
 .section{
-padding:50px 20px;
-max-width:1000px;
+max-width:1100px;
 margin:auto;
+padding:70px 20px;
+text-align:center;
 }
 
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
+margin-top:40px;
 }
 
 .card{
 background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-text-align:center;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
-.button{
-display:inline-block;
-padding:15px 30px;
-background:black;
-color:white;
-text-decoration:none;
-border-radius:30px;
-margin-top:20px;
+.card h3{
+margin-top:0;
+}
+
+.price{
+font-weight:bold;
+margin-top:10px;
+color:#c6a76e;
+}
+
+.about{
+background:#f4f4f4;
 }
 
 footer{
-text-align:center;
-padding:30px;
 background:black;
 color:white;
+text-align:center;
+padding:30px;
 }
 
 </style>
@@ -94,58 +123,104 @@ color:white;
 <body>
 
 <header>
-<h1>Clazina Aesthetics</h1>
-<p>Cosmetic Tattoo & Beauty Studio</p>
+
+<h1>CLAZINA AESTHETICS</h1>
+<p>Cosmetic Tattoo Studio</p>
+
 </header>
 
 <nav>
+
 <a href="#">Home</a>
 <a href="#services">Services</a>
+<a href="#about">About</a>
 <a href="#contact">Contact</a>
+
 </nav>
 
 <section class="hero">
+
 <div>
-<h1>Enhancing Natural Beauty</h1>
-<p>Cosmetic Tattooing Specialist</p>
+
+<h2>Enhance Your Natural Beauty</h2>
+
+<p>Cosmetic Tattoo Specialist in Annandale, Sydney</p>
+
+<a class="button" href="#">Book Appointment</a>
+
 </div>
+
 </section>
 
 <section class="section" id="services">
 
-<h2>Our Services</h2>
+<h2>Our Treatments</h2>
 
 <div class="services">
 
 <div class="card">
+
 <h3>Nano / Microblading Brows</h3>
-<p>Natural hair stroke brows designed to enhance your shape and facial symmetry.</p>
+
+<p>Natural hair stroke brows designed to enhance your facial symmetry.</p>
+
+<div class="price">$450</div>
+
 </div>
 
 <div class="card">
+
 <h3>Powder / Ombre Brows</h3>
-<p>Soft shaded brows giving a makeup style finish that lasts.</p>
+
+<p>Soft shaded brows creating a fuller makeup style finish.</p>
+
+<div class="price">$420</div>
+
 </div>
 
 <div class="card">
-<h3>Lip Blush</h3>
-<p>Enhance colour, shape and symmetry of the lips with long lasting pigment.</p>
+
+<h3>Lip Blush Tattoo</h3>
+
+<p>Enhance lip colour, shape and symmetry with soft pigment.</p>
+
+<div class="price">$400</div>
+
 </div>
 
 <div class="card">
+
 <h3>Cosmetic Eyeliner</h3>
-<p>Define the eyes with permanent eyeliner tailored to your style.</p>
+
+<p>Define your eyes with long lasting eyeliner tattoo.</p>
+
+<div class="price">$350</div>
+
 </div>
 
 </div>
+
+</section>
+
+<section class="section about" id="about">
+
+<h2>About Clazina Aesthetics</h2>
+
+<p>
+
+Clazina Aesthetics specialises in advanced cosmetic tattooing treatments designed to enhance natural beauty and simplify your daily routine. 
+
+Located in Annandale Sydney, we focus on creating soft, natural and long lasting results tailored to every client.
+
+</p>
 
 </section>
 
 <section class="section" id="contact">
 
-<h2>Book an Appointment</h2>
+<h2>Book Your Appointment</h2>
 
-<p>Located in Annandale, Sydney.</p>
+<p>Located in Annandale, Sydney</p>
 
 <a class="button" href="#">Book Now</a>
 
